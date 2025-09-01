@@ -1,0 +1,408 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .todo-container {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 350px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #234e70;
+    }
+
+    .input-section {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .input-section input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+    }
+
+    .input-section button {
+      background: #234e70;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .input-section button:hover {
+      background: #16334a;
+    }
+
+    ul {
+      list-style: none;
+      max-height: 300px;
+      overflow-y: auto;
+      padding-right: 5px;
+    }
+
+    li {
+      background: #f0f4f8;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    li.completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .delete-btn {
+      background: #ff4d4d;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .delete-btn:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById("taskInput");
+      const taskText = taskInput.value.trim();
+
+      if (taskText === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+      const li = document.createElement("li");
+
+      li.innerHTML = `
+        <span onclick="toggleTask(this)">${taskText}</span>
+        <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+      `;
+
+      document.getElementById("taskList").appendChild(li);
+      taskInput.value = "";
+    }
+
+    function toggleTask(element) {
+      element.parentElement.classList.toggle("completed");
+    }
+
+    function deleteTask(button) {
+      button.parentElement.remove();
+    }
+  </script>
+</body>
+</html>
+
+
+ -->
+
+
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Agency — Communications & PR</title>
+   <link rel="stylesheet" href="todoTask.css" />
+ </head>
+ <body>
+ 
+   <!-- Header / Nav -->
+   <header class="site-header">
+     <div class="container nav-wrap">
+       <a class="brand" href="#">
+         <span class="brand-mark">●</span> Diffu<span>si</span>on*
+       </a>
+       <input id="nav-toggle" type="checkbox" aria-label="Open menu" />
+       <label for="nav-toggle" class="hamburger" aria-hidden="true"></label>
+       <nav class="nav">
+         <a href="#work">Work</a>
+         <a href="#services">Services</a>
+         <a href="#about">About</a>
+         <a href="#insights">Insights</a>
+         <a href="#contact" class="nav-cta">Let’s talk</a>
+       </nav>
+     </div>
+   </header>
+ 
+   <!-- Hero -->
+   <section class="hero section reveal">
+     <div class="container hero-grid">
+       <div class="hero-copy">
+         <h1>We turn attention into outcomes.</h1>
+         <p>Integrated PR, communications, and content that earns trust, moves markets, and grows brands.</p>
+         <div class="hero-actions">
+           <a href="#work" class="btn primary">See our work</a>
+           <a href="#services" class="btn ghost">What we do</a>
+         </div>
+       </div>
+       <div class="hero-art">
+         <div class="hero-card">
+           <h3>Brand Lift ↑</h3>
+           <p>Positioning, messaging, narrative.</p>
+         </div>
+         <div class="hero-card alt">
+           <h3>Demand Gen →</h3>
+           <p>From headlines to pipeline.</p>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Logos / Social Proof -->
+   <section class="logos section reveal" aria-label="Clients">
+     <div class="container marquee">
+       <div class="track">
+         <span>CLIENT A</span><span>CLIENT B</span><span>CLIENT C</span>
+         <span>CLIENT D</span><span>CLIENT E</span><span>CLIENT F</span>
+         <span>CLIENT A</span><span>CLIENT B</span><span>CLIENT C</span>
+         <span>CLIENT D</span><span>CLIENT E</span><span>CLIENT F</span>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Services -->
+   <section id="services" class="services section reveal">
+     <div class="container">
+       <div class="section-head">
+         <h2>Services</h2>
+         <p>Full-funnel communications built for measurable impact.</p>
+       </div>
+       <div class="grid-3">
+         <article class="card">
+           <h3>Public Relations</h3>
+           <p>Earned media, newsmaking, executive visibility, and corporate comms for credibility at scale.</p>
+           <a href="#" class="link">Explore PR →</a>
+         </article>
+         <article class="card">
+           <h3>Content & Creative</h3>
+           <p>Stories, assets, and campaigns that convert—across web, social, video, and events.</p>
+           <a href="#" class="link">Explore Content →</a>
+         </article>
+         <article class="card">
+           <h3>Influence & Social</h3>
+           <p>Channel strategy, community growth, and creator partnerships that spark engagement.</p>
+           <a href="#" class="link">Explore Social →</a>
+         </article>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Featured Work -->
+   <section id="work" class="work section reveal">
+     <div class="container">
+       <div class="section-head">
+         <h2>Featured Work</h2>
+         <p>A few recent outcomes we’re proud of.</p>
+       </div>
+ 
+       <div class="work-grid">
+         <article class="work-card">
+           <div class="thumb" role="img" aria-label="Case study cover"></div>
+           <div class="work-meta">
+             <span class="tag">Product PR</span>
+             <h3>Launching a new category</h3>
+             <p>From zero awareness to #1 share of voice in 120 days.</p>
+             <a href="#" class="link">Read case study →</a>
+           </div>
+         </article>
+ 
+         <article class="work-card">
+           <div class="thumb alt" role="img" aria-label="Case study cover"></div>
+           <div class="work-meta">
+             <span class="tag">Corporate Comms</span>
+             <h3>Reframing the narrative</h3>
+             <p>Turning risk into reputation with a proactive program.</p>
+             <a href="#" class="link">Read case study →</a>
+           </div>
+         </article>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Insights -->
+   <section id="insights" class="insights section reveal">
+     <div class="container">
+       <div class="section-head">
+         <h2>Insights</h2>
+         <p>Ideas, frameworks, and POVs from our team.</p>
+       </div>
+       <div class="grid-3">
+         <article class="post">
+           <h3>From attention to action</h3>
+           <p>How to bridge PR wins to pipeline with an owned-content spine.</p>
+           <a href="#" class="link">Read →</a>
+         </article>
+         <article class="post">
+           <h3>AI in the newsroom</h3>
+           <p>What matters (and what doesn’t) for modern media relations.</p>
+           <a href="#" class="link">Read →</a>
+         </article>
+         <article class="post">
+           <h3>Precision thought leadership</h3>
+           <p>Designing executive platforms that move markets, not egos.</p>
+           <a href="#" class="link">Read →</a>
+         </article>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Testimonials -->
+   <section class="testimonials section reveal" aria-label="Client testimonials">
+     <div class="container">
+       <div class="section-head">
+         <h2>What partners say</h2>
+       </div>
+       <div class="grid-3">
+         <blockquote class="quote">
+           <p>“They don’t chase coverage—they build momentum.”</p>
+           <cite>CMO, Tech Brand</cite>
+         </blockquote>
+         <blockquote class="quote">
+           <p>“A rare blend of strategic and scrappy.”</p>
+           <cite>VP Communications</cite>
+         </blockquote>
+         <blockquote class="quote">
+           <p>“Clear KPIs, consistent results, great team.”</p>
+           <cite>Founder, Consumer App</cite>
+         </blockquote>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- CTA -->
+   <section class="cta section reveal">
+     <div class="container cta-wrap">
+       <h2>Ready to make some noise?</h2>
+       <p>Let’s align on outcomes and build the plan to get there.</p>
+       <a href="#contact" class="btn primary">Start a project</a>
+     </div>
+   </section>
+ 
+   <!-- Contact -->
+   <section id="contact" class="contact section reveal">
+     <div class="container contact-grid">
+       <div>
+         <h2>Contact</h2>
+         <p>Tell us about your goals and timeline. We’ll get back within one business day.</p>
+         <ul class="list">
+           <li>📍 New York · Los Angeles · London</li>
+           <li>✉︎ hello@example.com</li>
+           <li>↗ LinkedIn / Twitter / Instagram</li>
+         </ul>
+       </div>
+       <form class="form" onsubmit="event.preventDefault(); alert('Thanks!');">
+         <label>
+           <span>Name</span>
+           <input required type="text" placeholder="Your name" />
+         </label>
+         <label>
+           <span>Email</span>
+           <input required type="email" placeholder="you@company.com" />
+         </label>
+         <label>
+           <span>What can we help with?</span>
+           <textarea rows="4" placeholder="Brief overview…"></textarea>
+         </label>
+         <button class="btn primary" type="submit">Send</button>
+       </form>
+     </div>
+   </section>
+ 
+   <!-- Footer -->
+   <footer class="site-footer">
+     <div class="container foot-grid">
+       <p>© <span id="year"></span> Your Agency. All rights reserved.</p>
+       <nav class="foot-links">
+         <a href="#">Privacy</a>
+         <a href="#">Terms</a>
+         <a href="#">Accessibility</a>
+       </nav>
+     </div>
+   </footer>
+ 
+   <!-- Scroll reveal with 3s delay after entering viewport -->
+   <script>
+     // sticky header on scroll
+     const header = document.querySelector('.site-header');
+     window.addEventListener('scroll', () => {
+       header.classList.toggle('scrolled', window.scrollY > 10);
+     });
+ 
+     // dynamic year
+     document.getElementById('year').textContent = new Date().getFullYear();
+ 
+     // intersection observer with 3s delayed activation
+     const reveals = document.querySelectorAll('.reveal');
+     const io = new IntersectionObserver((entries) => {
+       entries.forEach(entry => {
+         if (entry.isIntersecting) {
+           const el = entry.target;
+           // prevent double timers
+           if (!el.dataset.pending) {
+             el.dataset.pending = '1';
+             setTimeout(() => {
+               el.classList.add('active');
+               io.unobserve(el);
+             }, 3000); // 3s after the section is in view
+           }
+         }
+       });
+     }, { threshold: 0.2 });
+ 
+     reveals.forEach(el => io.observe(el));
+   </script>
+ </body>
+ </html>
+ 

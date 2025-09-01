@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="todoTask.css">
+  <style>
+    
+    
+  </style>
+</head>
+<body>
+    <div class="todo">
+  <h2>To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Add a task">
+  <button onclick="addTask()">Add</button>
+</div>
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById("taskInput");
+      const text = input.value.trim();
+
+      if (text === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = text;
+
+      li.onclick = function () {
+        li.classList.toggle("completed");
+      };
+
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+<!-- Blog Section -->
+    <!-- <section class="blog">
+      <h2>From the GreenVibe Blog</h2>
+      <p>
+        Grow your plant knowledge with expert tips, care guides, and indoor
+        plant inspiration.
+      </p>
+    </section>
+
+    <div class="blog-section">
+      <div class="cards">
+        <div class="card">
+          <img src="./stack5.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Guides</div>
+            <div class="title">5 Easy Plants for Beginners</div>
+            <div class="description">
+              Start your green journey with these simple plants anyone can grow.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./stack2.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Guides</div>
+            <div class="title">Top 10 Air-Purifying Plants</div>
+            <div class="description">
+              Discover plants that clean your air while looking beautiful.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./stack3.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Gardening</div>
+            <div class="title">Watering Basics for Houseplants</div>
+            <div class="description">
+              Learn how to water your plants the right way to keep them healthy.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./stack3.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Gardening</div>
+            <div class="title">Watering Basics for Houseplants</div>
+            <div class="description">
+              Learn how to water your plants the right way to keep them healthy.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="./stack3.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Gardening</div>
+            <div class="title">Watering Basics for Houseplants</div>
+            <div class="description">
+              Learn how to water your plants the right way to keep them healthy.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./stack4.jpg" alt="Plant" />
+          <div class="card-content">
+            <div class="category">Solutions</div>
+            <div class="title">Low-Light Plants That Thrive</div>
+            <div class="description">
+              Perfect plants for spaces without much natural sunlight.
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div> -->
+
+    <!-- <section class="offer-section2">
+      <div class="offer-image">
+        <img
+          src="./65e7e5c7c236acc934fbe2d2_user-experience-importance.jpg"
+          alt="Indoor Plants"
+        />
+      </div>
+      <div class="offer-text">
+        <h2></h2>
+        <p>
+          Stackly Services offers a comprehensive suite of digital marketing
+          solutions tailored to meet the unique needs of each client. Their
+          services include search engine optimization (SEO), pay-per-click
+          advertising (PPC), social media marketing, and email campaigns. By
+          leveraging the latest trends and data analytics, Stackly ensures
+          targeted and measurable results. Their strategies are designed to
+          increase online visibility and drive quality traffic to businesses.
+          With a team of experienced marketers, Stackly helps brands establish a
+          strong digital presence.
+        </p>
+        <button>Learn more</button>
+      </div>
+    </section> -->
+
+    <!-- <div class="view-more">
+        <button>Explore More</button>
+      </div>
+    </div> -->
+
+    <!-- <section class="hero2">
+      <div class="overlay">
+        <div class="content">
+          <div class="left">
+            <h1 class="logo">GET IN TOUCH</h1>
+            <p class="tagline">
+              “Get in touch with Stackly for cutting–edge website solutions
+              designed to elevate your brand. Our team creates impactful,
+              user–centric websites that drive success.”
+            </p>
+            <div class="social-icons">
+              <span>⨉</span>
+              <span></span>
+              <span></span>
+            </div>
+          </div> -->
+
+          <!-- <div class="middle1">
+            <ul>
+              <li><h3>Our Shop</h3></li>
+              <li>Indoor Plants</li>
+              <li>Planters</li>
+              <li>Care Tips</li>
+              <li>Plant Bundles</li>
+            </ul>
+          </div>
+
+          <div class="right1">
+            <ul>
+              <li><h3>About</h3></li>
+              <li>Contact Us</li>
+              <li>Shipping & Returns</li>
+              <li>Privacy Policy</li>
+              <li>FAQ</li>
+            </ul>
+          </div> -->
