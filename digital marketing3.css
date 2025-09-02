@@ -1768,9 +1768,11 @@ h4 {
 }
 
 .content5 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #383838;
   line-height: 1.6;
+  padding-left: 100px;
+  padding-right: 100px;
   justify-content: center;
 }
 
