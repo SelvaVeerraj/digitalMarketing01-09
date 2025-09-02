@@ -1875,6 +1875,12 @@ h4 {
   margin-bottom: 30px;
 }
 
+.social-icons > a > img {
+  width: 5px;
+  height: 5px;
+  z-index: 100;
+}
+
 .info-block {
   margin-bottom: 20px;
   color: #eeeeee;
