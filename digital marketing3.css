@@ -102,11 +102,11 @@ a:hover{
 .hero-content h1 {
   line-height: 1.3;
   margin-bottom: 20px;
-  font-size: 500%;
+  font-size: 80px;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
+  font-size: 20px;
   margin-bottom: 25px;
 }
 
@@ -1050,7 +1050,7 @@ h4 {
 }
 
 .offer-text h2 {
-  margin-top: 70px;
+  margin-top: 30px;
   font-size: 50px;
   color: #234e70;
 }

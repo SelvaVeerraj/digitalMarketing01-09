@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing</title>
     <link rel="stylesheet" href="digital marketing3.css" />
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   </head>
   <style>
 
-    h2 h3 h4 {
+    h2, h3, h4 {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+    }
+
+    p, li{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    p {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-    }
   </style>
+
+
+
   <body>
+
+  
+
+
     <header class="hero" id="hero">
       <!-- Background Video -->
       <video autoplay muted loop playsinline class="bg-video">
@@ -55,6 +67,8 @@
           <button class="hero-btn secondary">Learn More</button>
         </div>
       </div>
+
+      
     
       <!-- Stats Section -->
       <div class="stats">
@@ -77,7 +91,7 @@
       </div>
     </header>
     
-    <div class="content5">
+    <div class="content5" data-aos="fade-up">
       <h2>WHO WE ARE</h2>
       <p>
         In digital marketing, "who we are" typically refers to the identity,
@@ -91,9 +105,9 @@
     </div>
 
 
-    <section class="offer-section">
-      <div class="offer-text">
-        <h2>Logo and Visual Identity</h2>
+    <section class="offer-section" >
+      <div class="offer-text" data-aos="fade-right">
+        <h2 >Logo and Visual Identity</h2>
         <p>
           Your logo is the cornerstone of your brand’s identity, visually
           representing your company’s values and mission with simplicity and
@@ -107,7 +121,7 @@
       <div class="offer-image">
         <img
           src="./side-view-man-working-with-computer.jpg"
-          alt="Indoor Plants"
+          alt="Indoor Plants" data-aos="fade-left"
         />
       </div>
     </section>
@@ -116,10 +130,10 @@
       <div class="offer-image">
         <img
           src="./65e7e5c7c236acc934fbe2d2_user-experience-importance.jpg"
-          alt="Indoor Plants"
+          alt="Indoor Plants" data-aos="fade-right"
         />
       </div>
-      <div class="offer-text">
+      <div class="offer-text" data-aos="fade-left">
         <h2>Website and User Experience</h2>
         <p>
           A website is the digital face of your brand, designed to inform,
@@ -134,7 +148,7 @@
 
     
 
-    <section class="favorite-plants" id="favorite-plants" >
+    <section class="favorite-plants" id="favorite-plants" data-aos="fade-up" >
       <h2>Our Marketing Services</h2>
       <p>
         In addition to core marketing services, Stackly provides website design,
@@ -148,9 +162,9 @@
       </p>
       
 
-      <section class="learning-hub" >
+      <section class="learning-hub" data-aos="fade-up">
         <!-- <h2>Learning Hub</h2> -->
-        <div class="hub-grid">
+        <div class="hub-grid" data-aos="fade-up">
           <!-- Card 1 -->
           <div class="hub-card">
             <img src="stack5.jpg" alt="Down Payment Assistance" />
@@ -159,8 +173,8 @@
                 <span class="tag">Email Marketing</span>
                 <span class="date">April 19, 2024</span>
               </div>
-              <h3>Email Marketing</h3>
-              <ul>
+              <h3 data-aos="fade-up">Email Marketing</h3>
+              <ul data-aos="fade-up">
                 <li>Campaign Strategy & Audience Segmentation</li>
                 <li>Email Design & Content Creation</li>
                 <li>Automation & Workflow Setup</li>
@@ -177,15 +191,15 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="hub-card">
+          <div class="hub-card" data-aos="fade-up">
             <img src="stack4.jpg" alt="FICO Score" />
             <div class="card-content">
               <div class="meta">
                 <span class="tag">PPC</span>
                 <span class="date">April 16, 2024</span>
               </div>
-              <h3>Pay-Per-Click (PPC)</h3>
-              <ul>
+              <h3 data-aos="fade-up">Pay-Per-Click (PPC)</h3>
+              <ul data-aos="fade-up">
                 <li>Google Ads (Search, Display, Shopping)</li>
                 <li>Campaign setup & optimization</li>
                 <li>Landing page creation & A/B testing</li>
@@ -201,15 +215,15 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="hub-card">
+          <div class="hub-card" data-aos="fade-up" >
             <img src="stack6.jpg" alt="Credit Monitoring Tools" />
             <div class="card-content">
               <div class="meta">
                 <span class="tag" style="margin-top: 10px;">SEO</span>
                 <span class="date" style="margin-top: 10px;">April 4, 2024</span>
               </div>
-              <h3>Search Engine Optimization (SEO)</h3>
-              <ul>
+              <h3 data-aos="fade-up">Search Engine Optimization (SEO)</h3>
+              <ul data-aos="fade-up">
                 <li>On-page & off-page SEO</li>
                 <li>Keyword research & content strategy</li>
                 <li>Technical SEO audits</li>
@@ -226,18 +240,18 @@
         </div>
       </section>
 
-      <section class="learning-hub" >
+      <section class="learning-hub" data-aos="fade-up">
         <div class="hub-grid">
           <!-- Card 1 -->
-          <div class="hub-card">
+          <div class="hub-card" data-aos="fade-up">
             <img src="stcak1.jpg" alt="Down Payment Assistance" />
             <div class="card-content">
               <div class="meta">
                 <span class="tag">SMM</span>
                 <span class="date">April 19, 2024</span>
               </div>
-              <h3 style="padding-top: 5px;">Social Media Marketing (SMM)</h3><br><br>
-              <ul style="margin-top: -15px;">
+              <h3 style="padding-top: 5px;" data-aos="fade-up">Social Media Marketing (SMM)</h3><br><br>
+              <ul style="margin-top: -15px;" data-aos="fade-up">
                 <li>Strategy & content creation</li>
                 <li>Paid ad campaigns (Facebook, Instagram, LinkedIn, X)</li>
                 <li>Community management & growth</li>
@@ -253,15 +267,15 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="hub-card">
+          <div class="hub-card" data-aos="fade-up">
             <img src="stack3.jpg" alt="FICO Score" />
             <div class="card-content">
               <div class="meta">
                 <span class="tag">Optimization</span>
                 <span class="date">April 16, 2024</span>
               </div>
-              <h3>Analytics & Conversation Rate Optimization</h3>
-              <ul>
+              <h3 data-aos="fade-up">Analytics & Conversation Rate Optimization</h3>
+              <ul data-aos="fade-up">
                 <li>User behavior tracking (GA4, Hotjar)</li>
                 <li>Funnel analysis & optimization</li>
                 <li>Automation & Workflow Setup</li>
@@ -277,20 +291,20 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="hub-card">
+          <div class="hub-card" data-aos="fade-up">
             <img src="stack2.jpg" alt="Credit Monitoring Tools" />
             <div class="card-content">
               <div class="meta">
                 <span class="tag">GMB</span>
                 <span class="date">April 4, 2024</span>
               </div>
-              <h3>Google My Business (GMB)</h3>
+              <h3 data-aos="fade-up">Google My Business (GMB)</h3>
               <!-- <h4>
                 Experienced Professionals: Our team brings years of expertise to
                 ensure quality and satisfaction.
               </h4> -->
               <br />
-              <ul>
+              <ul data-aos="fade-up">
                 <li>Customer-Centric Approach</li>
                 <li>Affordable Pricing</li>
                 <li>Quick & Reliable Service</li>
@@ -309,63 +323,13 @@
       </section>
     </section>
 
-    <!-- <div class="center-button">
-      <button class="explore-btn">Explore More</button>
-    </div> -->
-
-    <!-- <section class="career-section" class="offer-section reveal">
-      <div class="career-content">
-        <h5>CAREERS</h5>
-        <h1>Join an award winning <br> digital marketing agency.</h1>
-        <hr>
-        <p>
-          Beer and ping-pong are great... But, we focus more on employee development, 
-          ensuring an inclusive environment and giving back to the community. 
-          We’re a digital marketing agency that practices what we preach – 
-          We’re all about thinking big, owning it, and having fun.
-        </p>
-        <p>
-          This is why both Ad Age and Inc. Magazine have recently listed 
-          NP Digital as a Best Place to Work.
-        </p>
-        <button>Search and apply</button>
-      </div>
-  
-      <div class="career-images">
-        <div class="img img1">
-          <img src="https://via.placeholder.com/400x300" alt="office 1">
-        </div>
-        <div class="img img2">
-          <img src="Best-Digital-Marketing-Agencies-In-Mumbai.jpg" alt="office 2">
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <div class="container">
-      <div class="text">
-       
-        <div class="title1">Content Marketing Strategy</div>
-        <div class="desc">
-          A Content Marketing Strategy focuses on creating and distributing
-          valuable, relevant content to attract, engage, and convert a target
-          audience. It involves setting clear goals, understanding your
-          audience, and leveraging various channels to drive brand awareness and
-          business growth.
-        </div>
-      </div>
-      <div class="image">
-        <img
-          src="online-strategy-media-marketing-icons.jpg"
-          alt="Content Marketing"
-        />
-      </div>
-    </div>  -->
+   
 
     <section class="gopro-section">
       <div class="gopro-image">
         <img src="ecommerce-3d-illustrations.jpg" alt="GoPro with Skater">
       </div>
-      <div class="gopro-text">
+      <div class="gopro-text" data-aos="fade-left">
         <h2>Content Marketing Strategy</h2><br>
         <p>A Content Marketing Strategy focuses on creating and distributing
           valuable, relevant content to attract, engage, and convert a target
@@ -375,9 +339,9 @@
       </div>
     </section>
     
-    <section class="why-shop" id="why-shop" >
+    <section class="why-shop" id="why-shop" data-aos="fade-up">
       <h2>Why Choose Us ?</h2>
-      <p class="subheading">
+      <p class="subheading" data-aos="fade-up">
         When you choose me for your digital marketing needs, you’re choosing a
         dedicated partner who’s focused on delivering results. I take the time
         to understand your business, your audience, and your goals to create
@@ -388,7 +352,7 @@
     
 
     <section class="services" >
-      <div class="service-box">
+      <div class="service-box" data-aos="fade-up">
         <div class="icon">
           <img src="target.png" alt="Building Icon">
         </div>
@@ -396,7 +360,7 @@
         <p>Strategy is a plan to promote a brand using online platforms.</p>
       </div>
   
-      <div class="service-box">
+      <div class="service-box" data-aos="fade-up">
         <div class="icon">
           <img src="https://cdn-icons-png.flaticon.com/512/1076/1076887.png" alt="Shop Icon">
         </div>
@@ -405,7 +369,7 @@
           information online.</p>
       </div>
   
-      <div class="service-box">
+      <div class="service-box" data-aos="fade-up">
         <div class="icon">
           <img src="https://cdn-icons-png.flaticon.com/512/3239/3239952.png" alt="AI Icon">
         </div>
@@ -414,7 +378,7 @@
           efforts.</p>
       </div>
   
-      <div class="service-box">
+      <div class="service-box" data-aos="fade-up">
         <div class="icon">
           <img src="telephone.png" alt="Lightbulb Icon">
         </div>
@@ -425,43 +389,8 @@
     
   </section>
 
-
     
-
-      <!-- <div class="why-container">
-        <div class="feature left-top">
-          <h4>📄 Strategy</h4>
-          <p>Strategy is a plan to promote a brand using online platforms.</p>
-        </div>
-
-        <div class="feature right-top">
-          <h4>🕑24/7 Customer Support</h4>
-          <p>We’re here whenever you need us, 24/7.</p>
-        </div>
-
-        <div class="center-image">
-          <img src="transperant bulb.png" alt="Plant" />
-        </div>
-
-        <div class="feature left-bottom">
-          <h4>🎯 Audience</h4>
-          <p>
-            The group of people a business aims to reach with its marketing
-            efforts.
-          </p>
-        </div>
-
-        <div class="feature right-bottom">
-          <h4>🏡 Keyword</h4>
-          <p>
-            Keywords are specific words or phrases people use to search for
-            information online.
-          </p>
-        </div>
-      </div> -->
-    
-
-    <section class="newsletter" >
+    <section class="newsletter" data-aos="fade-up">
       <h1>Connect Us in Your Inbox</h1>
       <form>
         <input type="email" placeholder="Enter your email" />
@@ -473,7 +402,7 @@
 
 
           <section class="contact-section" id="contact-us" >
-            <div class="contact-wrapper">
+            <div class="contact-wrapper" data-aos="fade-right">
               <div class="contact-left">
                 <h1>GET IN TOUCH</h1>
                 <p>
@@ -487,7 +416,7 @@
                 </form>
               </div>
       
-              <div class="contact-right">
+              <div class="contact-right" data-aos="fade-left">
                 <h2>Contact info</h2>
                 <div class="info-block">
                   <p>
@@ -526,7 +455,7 @@
       
             <footer class="footer">
               <div class="footer-content">
-                <img src="logo-stackly1.jpg" alt="Stackly Logo" class="logo" />
+                <img src="logo-stackly1.jpg" alt="Stackly Logo" class="logo" data-aos="fade-right"/>
                 <p>© 2025 Copyright Stackly. All Rights Reserved.</p>
               </div>
             </footer>
@@ -538,7 +467,7 @@
 </html>
 
 
-<script> src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"</script>
+<!-- <script> src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"</script>
 
 <script>
   var typed = new Typed(".auto-type", {
@@ -548,7 +477,7 @@
     loop: true
   })
 
-</script>
+</script> -->
 
 <script>
   window.addEventListener("load", () => {
@@ -606,5 +535,14 @@
     });
   </script>
   
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  /* animation duration (ms) */
+    offset: 100,     /* trigger point */
+    once: true       /* only animate once */
+  });
+</script>
 
   
